@@ -1,0 +1,663 @@
+  /**** Global styles ****/
+  html {
+    font-size: 125%;
+    /*
+    62.5% = units of 10px
+    125% = units of 20px
+     */
+  }
+
+  h1,
+  h2,
+  a {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  h2 {
+    color: #000000;
+  }
+
+  p {
+    color: #1f2022;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  p,
+  .button,
+  .footerNav a,
+  .stayUpdated input[type=text],
+  .stayUpdated input[type=submit] {
+    line-height: 1.45rem;
+  }
+
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  .imgContainer {
+    overflow: hidden;
+    min-height: 184px;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .button {
+    color: #fcfcfc;
+    margin-top: 40px;
+    background-color: rgba(24, 51, 153, 0.78);
+    padding: 23px 18px;
+    display: inline-block;
+  }
+
+  .buttonWrap {
+    text-align: center;
+  }
+
+  /**** Header ****/
+
+  header {
+    min-height: 600px;
+    background: url(../images/hero.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 1px;
+  }
+
+  h1 {
+    font-size: 4.1rem;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 2.5rem;
+  }
+
+  .magazine {
+    font-size: 2.35rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .logoWrap {
+    margin-top: 201px;
+    clear: both;
+  }
+
+  .logo,
+  .headerNav,
+  .socials {
+    display: none;
+  }
+
+  nav img {
+    float: right;
+    margin-top: 20px;
+  }
+
+  /**** News Articles ****/
+
+  .newsArticles {
+    margin-top: 40px;
+  }
+
+  .newsArticles h2 {
+    font-size: 1.75rem;
+    margin-bottom: 40px;
+  }
+
+  .newsArticles .imgContainer {
+    margin-bottom: 50px;
+  }
+
+  .newsArticles .imgContainer:last-of-type {
+    display: none;
+  }
+
+  /**** This Weeks Highlight ****/
+
+  .weeksHighlight {
+    background-color: plum;
+    margin-bottom: 50px;
+  }
+
+  .weeksHighlight h2 {
+    font-size: 1.65rem;
+    width: 40%;
+    margin: 0 auto 30px;
+  }
+
+  .weeksHighlight .imgContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  /**** Full bleed section ****/
+
+  .fullBleed {
+    background-color: dodgerblue;
+  }
+
+  .fullBleed h2 {
+    font-size: 1.1rem;
+    margin: 50px auto 30px;
+  }
+
+  .fullBleed p {
+    text-align: center;
+  }
+
+  .fullBleed .button {
+    margin: 30px 0 50px;
+  }
+
+  /**** Events Community Brands ****/
+
+  .eventComBrand {
+    background: url(../images/eventComBrand.png);
+    background-size: cover;
+    background-position: center left;
+  }
+
+  .eventComBrand h2 {
+    font-size: 1.35rem;
+  }
+
+  .eventComBrand ul {
+    text-align: center;
+  }
+
+  .eventComBrand ul li {
+    margin: 50px 0;
+  }
+
+  .eventComBrand ul a {
+    font-size: 1.35rem;
+    color: #ffffff;
+  }
+
+  .eventComBrand ul i {
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+
+  /**** footer ****/
+
+  footer {
+    background-color: #e3e3e3;
+    padding: 1px;
+    text-align: center;
+  }
+
+  footer h2 {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  .stayUpdated {
+    margin-top: 50px;
+  }
+
+  .stayUpdated h2 {
+    margin-bottom: 30px;
+  }
+
+  .stayUpdated p {
+    font-size: 0.8rem;
+    margin-bottom: 11px;
+  }
+
+  .stayUpdated input[type=text],
+  .stayUpdated input[type=submit] {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .stayUpdated input[type=submit] {
+    margin: 10px 0 50px 0;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .contact h2 {
+    margin-bottom: 16px;
+  }
+
+  .footerNav {
+    margin: 40px 0 40px 0;
+  }
+
+  .footerNav a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .footerNav li {
+    padding-bottom: 5px;
+  }
+
+  .copyright {
+    clear: both;
+    background-color: #acacac;
+  }
+
+  .copyright p {
+    font-size: 0.7rem;
+  }
+
+  /**** screen meets or exceeds 370px ****/
+
+  @media (min-width: 370px) {
+
+    /**** header ****/
+    h1 {
+      font-size: 5.1rem;
+    }
+
+    .magazine {
+      font-size: 3.35rem;
+    }
+
+    /**** News Articles ****/
+
+    .newsArticles .imgContainer:nth-of-type(1) {
+      width: calc(50% - 15px);
+      margin: 0 15px 50px 0;
+      float: left;
+    }
+
+    .newsArticles .imgContainer:nth-of-type(2) {
+      width: calc(50% - 15px);
+      margin: 0 0 50px 15px;
+      float: left;
+    }
+
+    /**** Footer ****/
+
+    .contact {
+      width: 70%;
+      float: left;
+      margin-bottom: 50px;
+    }
+
+    .contact h2,
+    .contact p {
+      text-align: left;
+    }
+
+    .footerNav {
+      width: 30%;
+      float: left;
+      margin: 0 0 50px 0;
+    }
+
+    .footerNav li {
+      text-align: right;
+    }
+
+  }
+
+  /**** screen meets or exceeds 700px ****/
+
+  @media (min-width: 700px) {
+
+    /**** Global styles ****/
+
+    img {
+      margin: 0 auto;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .weeksHighlight .contentWrap,
+    .fullBleed .container,
+    footer .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /**** News Artilces****/
+
+    .newsArticles .imgContainer:nth-of-type(1) {
+      width: calc(33.33% - 20px);
+      margin: 0 15px 50px 0;
+      float: left;
+    }
+
+    .newsArticles .imgContainer:nth-of-type(2) {
+      width: calc(33.33% - 20px);
+      margin: 0 15px 50px 15px;
+      float: left;
+    }
+
+    .newsArticles .imgContainer:nth-of-type(3) {
+      width: calc(33.33% - 20px);
+      margin: 0 0 50px 15px;
+      float: left;
+      display: block;
+    }
+
+    /**** Footer ****/
+
+    .stayUpdated input[type=text] {
+      width: calc(70% - 10px);
+      float: left;
+    }
+
+    .stayUpdated input[type=submit] {
+      width: 30%;
+      float: left;
+      margin: 0 0 0 10px;
+    }
+
+    .stayUpdated {
+      margin-bottom: 40px;
+    }
+  }
+
+  /**** screen meets or exceeds 900px****/
+
+  @media (min-width: 900px) {
+
+    /**** Global Styles ****/
+
+    p {
+      font-size: 1rem;
+    }
+
+    /**** Header ****/
+
+    h1 {
+      font-size: 11.35rem;
+      line-height: 5rem;
+    }
+
+    .magazine {
+      font-size: 7.5rem;
+    }
+
+    .logoWrap {
+      margin-top: 170px;
+    }
+
+    /**** News Articles ****/
+
+    .newsArticles {
+      margin-top: 95px;
+    }
+
+    .newsArticles h2 {
+      font-size: 2.45rem;
+      margin-bottom: 95px
+    }
+
+    /**** weeksHigligth ****/
+
+    .weeksHighlight {
+      margin-top: 50px;
+    }
+
+    .weeksHighlight h2 {
+      font-size: 2.1rem;
+    }
+
+    /**** Footer ****/
+
+    footer .container {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+  }
+
+  /**** screen meets or exceeds 1400px ****/
+
+  @media (min-width: 1400px) {
+
+    /**** Gobal Styles ****/
+
+    .container {
+      width: 85%;
+    }
+
+    .button {
+      padding: 15px;
+    }
+
+    .weeksHighlight .contentWrap h2,
+    .fullBleed .container h2,
+    .weeksHighlight .contentWrap p,
+    .fullBleed .container p,
+    .buttonWrap {
+      text-align: left;
+    }
+
+    /**** Header ****/
+
+    header {
+      min-height: 800px;
+      position: relative;
+    }
+
+    .logoWrap {
+      margin-top: 210px;
+    }
+
+    nav img {
+      display: none;
+    }
+
+
+    header nav {
+      margin: 15px 0 0 0;
+    }
+
+    .logo,
+    .headerNav,
+    .socials {
+      display: inline-block;
+    }
+
+    .logo {
+      text-align: left;
+      font-size: 3.05rem;
+      color: #ffffff;
+      font-style: italic;
+      line-height: 2rem;
+      float: left;
+    }
+
+    .headerNav {
+      float: right;
+    }
+
+    .headerNav li {
+      float: left;
+      margin-right: 30px;
+    }
+
+    .headerNav li:last-of-type {
+      margin-right: 0;
+    }
+
+    .headerNav a {
+      font-family: 'Catamaran', sans-serif;
+      font-size: 0.9rem;
+      color: #ffffff;
+
+    }
+
+    .socials {
+      position: absolute;
+      bottom: 40px;
+      right: 50px;
+    }
+
+    .socials li {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    /**** Weeks Higlights ****/
+
+    .weeksHighlight .imgContainer {
+      width: calc(30% - 20px);
+      margin: 0 20px 0 0;
+      float: left;
+    }
+
+    .weeksHighlight .contentWrap {
+      width: calc(70% - 20px);
+      margin-left: 20px;
+      float: left;
+    }
+
+    .weeksHighlight h2 {
+      line-height: 1.35rem;
+      margin-bottom: 30px;
+    }
+
+    /**** Full Bleed ****/
+
+    .fullBleed {
+      margin-top: 100px;
+    }
+
+    .fullBleed h2 {
+      font-size: 1.75rem;
+    }
+
+    .fullBleed .container {
+      width: 70%;
+      padding-top: 50px;
+    }
+
+    .fullBleed1 .contentWrap,
+    .fullBleed1 .imgContainer {
+      width: 50%;
+      float: right;
+    }
+
+    .fullBleed2 .contentWrap,
+    .fullBleed2 .imgContainer {
+      width: 50%;
+      float: left;
+    }
+
+    .fullBleed1 {
+      margin: 0;
+    }
+
+    /**** Events Community Brands  ****/
+
+    .eventComBrand .container {
+      width: 100%;
+      min-height: 318px;
+    }
+
+    .eventComBrand ul {
+      padding: 95px 0;
+      margin: 0 auto;
+      width: 1400px;
+    }
+
+    .eventComBrand ul a {
+      font-size: 1.55rem;
+      display: inline-block;
+    }
+
+    .eventComBrand ul li {
+      float: right;
+      width: 33.33%;
+      margin: 0;
+    }
+
+    /**** Footer ****/
+    footer .container {
+      width: 85%;
+    }
+
+    footer h2 {
+      font-size: 1.55rem;
+
+    }
+
+    .stayUpdated {
+      width: 50%;
+      float: left;
+      border: 1px solid red;
+    }
+
+    .stayUpdated h2,
+    .stayUpdated p {
+      text-align: left;
+    }
+
+    .stayUpdated p,
+    .contact p,
+    .footerNav a {
+      font-size: 1rem;
+    }
+
+    .contact {
+      width: 40%;
+      padding-left: 70px;
+      border: 1px solid blue;
+    }
+
+    .footerNav {
+      width: 10%;
+      border: 1px solid lime;
+    }
+
+    .stayUpdated,
+    .contact,
+    .footerNav {
+      margin: 100px 0;
+    }
+
+
+    .stayUpdated input[type=text] {
+      text-align: left;
+      padding-left: 30px;
+      font-size: 1rem;
+      color: #1f2022;
+    }
+
+    .stayUpdated input[type=submit] {
+      margin: 0;
+    }
+
+  }
