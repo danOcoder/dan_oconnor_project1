@@ -75,7 +75,7 @@
 
   header {
     min-height: 600px;
-    background: url(../images/hero.png);
+    background: url(../assets/hero.png);
     background-size: cover;
     background-position: center center;
     padding: 1px;
@@ -170,7 +170,7 @@
   /**** Events Community Brands ****/
 
   .eventComBrand {
-    background: url(../images/eventComBrand.png);
+    background: url(../assets/eventComBrand.png);
     background-size: cover;
     background-position: center left;
   }
