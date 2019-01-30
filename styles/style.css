@@ -40,11 +40,9 @@
     margin: 0 auto;
   }
 
-
   .container {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
   }
 
   .imgContainer {
@@ -62,13 +60,25 @@
   .button {
     color: #fcfcfc;
     margin-top: 40px;
-    background-color: rgba(24, 51, 153, 0.78);
+    background-color: #183399;
     padding: 23px 18px;
     display: inline-block;
   }
 
+  .button:hover {
+    color: #183399;
+    background-color: #fcfcfc;
+    border: 1px solid #183399;
+  }
+
   .buttonWrap {
     text-align: center;
+  }
+
+  .headerNav a:hover,
+  .socials a:hover,
+  .eventComBrand a:hover {
+    color: #183399;
   }
 
   /**** Header ****/
@@ -132,13 +142,11 @@
   /**** This Weeks Highlight ****/
 
   .weeksHighlight {
-    background-color: plum;
     margin-bottom: 50px;
   }
 
   .weeksHighlight h2 {
     font-size: 1.65rem;
-    width: 40%;
     margin: 0 auto 30px;
   }
 
@@ -149,10 +157,6 @@
   }
 
   /**** Full bleed section ****/
-
-  .fullBleed {
-    background-color: dodgerblue;
-  }
 
   .fullBleed h2 {
     font-size: 1.1rem;
@@ -173,6 +177,7 @@
     background: url(../assets/eventComBrand.png);
     background-size: cover;
     background-position: center left;
+    padding: 1px;
   }
 
   .eventComBrand h2 {
@@ -201,8 +206,8 @@
 
   footer {
     background-color: #e3e3e3;
-    padding: 1px;
     text-align: center;
+    padding: 1px;
   }
 
   footer h2 {
@@ -259,6 +264,11 @@
 
   .footerNav li {
     padding-bottom: 5px;
+  }
+
+  .footerNav a:hover {
+    color: #183399;
+    border-bottom: 2px solid #183399;
   }
 
   .copyright {
@@ -367,14 +377,14 @@
     /**** Footer ****/
 
     .stayUpdated input[type=text] {
-      width: calc(70% - 10px);
+      width: 70%;
       float: left;
     }
 
     .stayUpdated input[type=submit] {
       width: 30%;
       float: left;
-      margin: 0 0 0 10px;
+      margin: 0;
     }
 
     .stayUpdated {
@@ -428,12 +438,39 @@
       font-size: 2.1rem;
     }
 
+    /**** Full Bleed ****/
+
+    .fullBleed h2 {
+      font-size: 1.75rem;
+    }
+
     /**** Footer ****/
 
     footer .container {
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
     }
+
+    footer h2 {
+      font-size: 1.55rem;
+    }
+
+    .stayUpdated p,
+    .contact p,
+    .footerNav a {
+      font-size: 1rem;
+    }
+
+    .stayUpdated {
+      max-width: 1400px;
+    }
+
+    .stayUpdated form {
+      margin: 0 auto;
+      padding: 0 15%;
+    }
+
+
 
   }
 
@@ -538,25 +575,27 @@
       float: left;
     }
 
+    .weeksHighlight .imgContainer img {
+      min-height: 364px;
+    }
+
     .weeksHighlight .contentWrap {
       width: calc(70% - 20px);
       margin-left: 20px;
       float: left;
     }
 
-    .weeksHighlight h2 {
-      line-height: 1.35rem;
-      margin-bottom: 30px;
+    .weeksHighlight .contentWrap h2 {
+      margin-bottom: 10px;
+      text-align: left;
+      width: 100%;
+      ;
     }
 
     /**** Full Bleed ****/
 
     .fullBleed {
       margin-top: 100px;
-    }
-
-    .fullBleed h2 {
-      font-size: 1.75rem;
     }
 
     .fullBleed .container {
@@ -605,19 +644,19 @@
     }
 
     /**** Footer ****/
+
     footer .container {
       width: 85%;
     }
 
-    footer h2 {
-      font-size: 1.55rem;
-
+    .stayUpdated h2,
+    .contact h2 {
+      margin-bottom: 13px;
     }
 
     .stayUpdated {
       width: 50%;
       float: left;
-      border: 1px solid red;
     }
 
     .stayUpdated h2,
@@ -625,27 +664,23 @@
       text-align: left;
     }
 
-    .stayUpdated p,
-    .contact p,
-    .footerNav a {
-      font-size: 1rem;
-    }
-
     .contact {
       width: 40%;
       padding-left: 70px;
-      border: 1px solid blue;
     }
 
     .footerNav {
       width: 10%;
-      border: 1px solid lime;
     }
 
     .stayUpdated,
     .contact,
     .footerNav {
       margin: 100px 0;
+    }
+
+    .stayUpdated form {
+      padding: 0;
     }
 
 
@@ -656,8 +691,10 @@
       color: #1f2022;
     }
 
-    .stayUpdated input[type=submit] {
-      margin: 0;
+
+    .copyright p {
+      font-size: 0.9rem;
+      padding: 10px;
     }
 
   }
