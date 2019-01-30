@@ -219,6 +219,21 @@ a {
 }
 
 /**** Global styles ****/
+
+/**** colors
+white: #ffffff
+very-light-grey: #e3e3e3
+grey: #acacac
+black: #000000
+blue: #183399
+****/
+
+/**** Fonts
+font-family: 'Cormorant Garamond', serif;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Catamaran', sans-serif;
+****/
+
 html {
   font-size: 125%;
   /*
@@ -277,7 +292,7 @@ img {
 }
 
 .button {
-  color: #fcfcfc;
+  color: #ffffff;
   margin-top: 40px;
   border: 1px solid transparent;
   background-color: #183399;
@@ -287,7 +302,7 @@ img {
 
 .button:hover {
   color: #183399;
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   border: 1px solid #183399;
 }
 
@@ -299,6 +314,19 @@ img {
 .socials a:hover,
 .eventComBrand a:hover {
   color: #183399;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
 }
 
 /**** Header ****/
@@ -459,6 +487,10 @@ footer p {
   font-family: 'Catamaran', sans-serif;
   font-size: 0.9rem;
   padding: 10px 0;
+}
+
+.stayUpdated input[type=text]::placeholder {
+  color: #1f2022;
 }
 
 .stayUpdated input[type=submit] {
@@ -905,7 +937,6 @@ footer p {
     text-align: left;
     padding-left: 30px;
     font-size: 1rem;
-    color: #1f2022;
   }
 
 
