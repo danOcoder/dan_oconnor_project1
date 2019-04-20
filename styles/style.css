@@ -260,7 +260,6 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-  transition: font-size 0.25s linear;
 }
 
 p,
@@ -313,7 +312,6 @@ img {
 .button {
   color: #000000;
   display: inline-block;
-  border-radius: 2px;
   position: relative;
   margin: 40px auto 0;
   padding: 19px 22px;
@@ -326,7 +324,7 @@ img {
   top: 0;
   left: 0;
   display: block;
-  border-radius: 36px;
+  border-radius: 2px;
   background-color: rgba(0, 44, 204, 0.86);
   width: 64px;
   height: 64px;
