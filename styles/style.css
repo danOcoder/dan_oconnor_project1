@@ -284,12 +284,8 @@ h1,
   color: #ffffff;
 }
 
-.wrapper {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
 .container {
+  max-width: 1600px;
   width: 90%;
   margin: 0 auto;
 }
