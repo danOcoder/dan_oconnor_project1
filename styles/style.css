@@ -244,16 +244,6 @@ html {
 
 h1,
 h2,
-a,
-p,
-i,
-.magazine,
-.logo {
-  transition: font-size 0.25s linear;
-}
-
-h1,
-h2,
 a {
   font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
