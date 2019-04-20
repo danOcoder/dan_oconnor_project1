@@ -244,6 +244,16 @@ html {
 
 h1,
 h2,
+a,
+p,
+i,
+.magazine,
+.logo {
+  transition: font-size 0.25s linear;
+}
+
+h1,
+h2,
 a {
   font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
@@ -260,6 +270,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
+  transition: font-size 0.25s linear;
 }
 
 p,
@@ -426,6 +437,7 @@ nav {
 .headerNav li {
   float: left;
   margin-right: 15px;
+  opacity: 0;
 }
 
 .headerNav a {
@@ -446,10 +458,54 @@ nav {
 
 .socials li {
   margin-bottom: 15px;
+  opacity: 0;
 }
 
 .socials a i {
   font-size: 1.2rem;
+}
+
+.animationOne {
+  animation: fade-in-item 1s 0.2s ease-out forwards;
+}
+
+.animationTwo {
+  animation: fade-in-item 1s 0.6s ease-out forwards;
+}
+
+.animationThree {
+  animation: fade-in-item 1s 1s ease-out forwards;
+}
+
+.animationFour {
+  animation: fade-in-item 1s 1.4s ease-out forwards;
+}
+
+.animationFive {
+  animation: fade-in-item 1s 1.8s ease-out forwards;
+}
+
+.animationSix {
+  animation: fade-in-item 1s 2.2s ease-out forwards;
+}
+
+.animationSeven {
+  animation: fade-in-item 1s 2.6s ease-out forwards;
+}
+
+@keyframes fade-in-item {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /**** News Articles ****/
@@ -681,6 +737,10 @@ footer p {
 
   /**** Header ****/
 
+  header {
+    min-height: 80vh;
+  }
+
   h1 {
     font-size: 6rem;
     line-height: 2.75rem;
@@ -688,6 +748,35 @@ footer p {
 
   .magazine {
     font-size: 4rem;
+  }
+
+  .logoWrap {
+    margin-top: 210px;
+  }
+
+  header nav {
+    margin: 15px 0 0 0;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  .logo {
+    text-align: left;
+    font-size: 3.05rem;
+    color: #ffffff;
+    font-style: italic;
+    line-height: 2rem;
+    float: left;
+  }
+
+  .headerNav {
+    float: right;
+  }
+
+  .headerNav li {
+    margin-right: 30px;
   }
 
   /**** News Articles****/
@@ -739,17 +828,17 @@ footer p {
 
   /**** Header ****/
 
+  header {
+    min-height: 90vh;
+  }
+
   h1 {
-    font-size: 11.35rem;
-    line-height: 5.25rem;
+    font-size: 8rem;
+    line-height: 3.25rem;
   }
 
   .magazine {
-    font-size: 7.5rem;
-  }
-
-  .logoWrap {
-    margin-top: 170px;
+    font-size: 4.5rem;
   }
 
   /**** News Articles ****/
@@ -827,38 +916,17 @@ footer p {
 
   /**** Header ****/
 
-  header {
-    min-height: 800px;
-    position: relative;
+  h1 {
+    font-size: 11.35rem;
+    line-height: 5.25rem;
+  }
+
+  .magazine {
+    font-size: 7.5rem;
   }
 
   .logoWrap {
-    margin-top: 210px;
-  }
-
-  header nav {
-    margin: 15px 0 0 0;
-  }
-
-  .logo {
-    display: inline-block;
-  }
-
-  .logo {
-    text-align: left;
-    font-size: 3.05rem;
-    color: #ffffff;
-    font-style: italic;
-    line-height: 2rem;
-    float: left;
-  }
-
-  .headerNav {
-    float: right;
-  }
-
-  .headerNav li {
-    margin-right: 30px;
+    margin-top: 170px;
   }
 
   /**** Weeks Highlights ****/
